@@ -23,7 +23,7 @@ for el in range(len(rating_list)):
         rating_list.insert(0, score)
     elif rating_list[-1] > score:
         rating_list.append(score)
-    elif rating_list[el] > score and rating_list[el + 1] < score:
+    elif rating_list[el] > score > rating_list[el + 1]:
         rating_list.insert(el + 1, score)
         break
 
